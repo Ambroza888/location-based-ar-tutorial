@@ -19,9 +19,14 @@
       scale="120 120 120"
       gps-entity-place="latitude: 47.4861069; longitude: -122.3031709;"
     ></a-text>
-    <a-box material="color: yellow" gps-entity-place="latitude: 47.4862621; longitude: -122.3032201"/>
+    <a-text id='meters'></a-text>
+    <a-box material="color: yellow" position="0 30 0" gps-entity-place="latitude: 47.4862621; longitude: -122.3032201"/>
       <a-entity camera></a-entity>
     </a-scene>
+    <script>
+      const distanceMsg = document.querySelector('[gps-entity-place]').getAttribute('distanceMsg');
+      document.getElementById('meters').value = distanceMsg;
+    </script>
   </body>
 </html>
 
