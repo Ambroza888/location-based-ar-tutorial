@@ -14,14 +14,7 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-text
-      value="This content will always face you."
-      scale="120 120 120"
-      gps-entity-place="latitude: 47.4861069; longitude: -122.3031709;"
-    ></a-text>
-    <a-box material="color: yellow" position="0 30 0" gps-entity-place="latitude: 47.4862621; longitude: -122.3032201"/>
-    <a-box material="color: blue" position="0 30 0" gps-entity-place="latitude: 47.4861067; longitude: -122.3035437"/>
-    <a-box material="color: red" position="0 30 0" gps-entity-place="latitude: 47.4863029; longitude: -122.3035259"/>
+    <a-entity gltf-model="./assets/magnemite/map-marker.png" gps-entity-place="longitude: 47.4861069; latitude: -122.3031709;" animation-mixer/>
       <a-camera gps-camera rotation-reader></a-camera>
     </a-scene>
   </body>
