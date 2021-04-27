@@ -15,19 +15,17 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <!-- <a-assets> -->
-        <!-- <img id="my-image" src="./assets/magnemite/map-marker.png"> -->
-      <!-- </a-assets> -->
-    
-      <!-- Using the asset management system. -->
-      <!-- <a-image src="#my-image" gps-entity-place="longitude: -122.303146; latitude: 47.486099;"></a-image> -->
+      <a-assets> -->
+        <img id="my-image" src="./assets/magnemite/map-marker.png">
+      </a-assets>
+      <a-image src="#my-image" gps-entity-place="longitude: -122.303146; latitude: 47.486099;"></a-image>
       
-      <a-text
-      id="location"
-      look-at="[gps-camera]"
-      scale="120 120 120"
-      ></a-text>
-        <a-camera gps-camera rotation-reader> </a-camera>
+        <!-- <a-text
+        id="location"
+        look-at="[gps-camera]"
+        scale="120 120 120"
+        ></a-text> -->
+      <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
 
     <script src="./app.js"></script>
